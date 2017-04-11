@@ -1,28 +1,50 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+    <h1>App.vue, this is static.</h1>
+    <span @click="viewAbout">About</span> <span @click="viewTechnical">Technical</span> <span @click="viewResume">Resume</span> <span @click="viewProjects">Projects</span> <span @click="viewContact">Contact</span>
+    <component :is="currentView"></component>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import About from './components/About'
+import Technical from './components/Technical'
+import Resume from './components/Resume'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
 
 export default {
   name: 'app',
+  data () {
+    return {
+      currentView: 'About'
+    }
+  },
+  methods: {
+    viewAbout: function () {
+      this.currentView = 'About'
+    },
+    viewTechnical: function () {
+      this.currentView = 'Technical'
+    },
+    viewResume: function () {
+      this.currentView = 'Resume'
+    },
+    viewProjects: function () {
+      this.currentView = 'Projects'
+    },
+    viewContact: function () {
+      this.currentView = 'Contact'
+    }
+  },
   components: {
-    Hello
+    About,
+    Technical,
+    Resume,
+    Projects,
+    Contact
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style src="./assets/styles/global.sass" lang="sass"></style>

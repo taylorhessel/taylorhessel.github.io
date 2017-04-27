@@ -1,0 +1,311 @@
+/* Coolors Exported Palette - https://coolors.co/1f2421-8b8b8b-49a078-9cc5a1-dce1de */
+
+/* HSL */
+$black: hsla(144%, 7%, 13%, 1)
+$grey: hsla(140%, 1%, 55%, 1)
+$green: hsla(152%, 37%, 46%, 1)
+$lightgreen: hsla(127%, 26%, 69%, 1)
+$white: hsla(144%, 8%, 87%, 1)
+
+/* Ink breakpoints */
+$tiny-max: 320px
+$small-min: 321px
+$small-max: 640px
+$medium-min: 641px
+$medium-max: 960px
+$large-min: 961px
+$large-max: 1260px
+$xlarge-min: 1261px
+
+.fade-enter-active, .fade-leave-active
+  transition: opacity .5s ease
+
+.fade-enter, .fade-leave-to
+  opacity: 0
+
+*
+  font-family: 'Source Sans Pro', sans-serif
+
+html
+  background-color: $black
+
+  #app
+    min-width: 100vw
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    .main-wrapper
+      padding: 0 15px
+      background-color: $black
+      width: 80vw
+      height: 80vh
+      overflow-y: scroll
+      color: $black
+
+      nav
+        position: fixed
+
+        &.bottom
+          bottom: 0
+          right: 0
+          margin: 0 10px 0 0
+          @media (min-width: $large-min)
+            margin: 0 20px 10px 0
+
+          ul
+
+            li
+
+              a
+                font-family: 'Permanent Marker', cursive
+                transition: all .2s ease-in-out
+                &:hover
+                  transform: scale(1.1)
+                margin: 0 0 0 20px
+                padding: 0
+                text-decoration: none
+                font-size: 1.5em
+                color: $green
+                &.active
+                  color: $lightgreen
+                @media (max-width: $small-max)
+                  font-size: 1em
+                  margin: 0 0 5px 10px
+
+        &.top
+          top: 0
+          left: 0
+          margin: 10px 0 0 10px
+          @media (min-width: $large-min)
+            margin: 20px 0 0 20px
+
+          ul
+
+            li
+
+              a
+                margin: 0 15px 0 0
+                padding: 0
+                @media (max-width: $small-max)
+                  margin: 0 10px 0 0
+                text-decoration: none
+                color: $green
+                transition: all .2s ease-in-out
+                &:hover
+                  transform: scale(1.1)
+
+                i
+                  font-size: 2em
+                  @media (max-width: $small-max)
+                    font-size: 1.5em
+
+      .view
+        height: 100%
+
+        &.home
+          flex-direction: column
+          justify-content: center
+          align-items: center
+          text-align: center
+
+          h1
+            font-family: 'Permanent Marker', cursive
+            color: $green
+            font-size: 3em
+            margin-bottom: 15px
+            @media (max-width: $small-max)
+              font-size: 2.25em
+
+          h2
+            color: $lightgreen
+            margin-bottom: 0
+            font-size: 2em
+            @media (max-width: $small-max)
+              font-size: 1.75em
+
+        &.about
+          flex-direction: row
+          align-items: center
+          @media (max-width: $medium-max)
+            align-items: flex-start
+
+          .bio
+            color: $grey
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            font-size: 1em
+            @media (min-width: $large-min)
+              padding: 50px
+
+            p
+
+              span
+                color: $lightgreen
+                font-size: 1.75em
+                @media (max-width: $small-max)
+                  font-size: 1.5em
+
+              a
+                color: $white
+                text-decoration: none
+
+            img
+              border-radius: 50%
+              width: 100%
+              max-width: 200px
+              margin-bottom: 20px
+              @media (max-width: $small-max)
+                max-width: 150px
+
+          .work-history
+            color: $grey
+
+            .job
+              margin-bottom: 15px
+
+              h4
+                color: $lightgreen
+                margin-bottom: 5px
+
+              .job-date
+                font-size: .8em
+                margin-bottom: 5px
+
+        &.technical
+          flex-direction: row
+          align-items: center
+          @media (max-width: $medium-max)
+            align-items: flex-start
+
+          .technical-wrapper
+            width: 100%
+            overflow-y: scroll
+
+            .skill-wrapper
+              color: $grey
+              text-align: center
+              padding: 0 30px
+
+              h2
+                color: $lightgreen
+                @media (max-width: $medium-max)
+                  margin-top: 15px
+                &.foundation
+                  @media(max-width: $medium-max)
+                    margin-top: 0
+
+              ul
+                padding-left: 0
+                @media (max-width: $medium-max)
+                  margin: 0
+
+                &.foundation-1
+                  margin-top: 0
+                  li:last-child
+                    @media(max-width: $medium-max)
+                      margin-bottom: 0
+
+                &.foundation-2
+                  margin-top: 0
+
+                li
+                  list-style: none
+                  margin: .3em 0
+
+        &.projects
+          flex-direction: row
+          align-items: center
+          @media (max-width: $medium-min)
+            align-items: flex-start
+          @media (min-width: 667px) and (max-width: 767px)
+            align-items: flex-start
+          @media (min-width: 768px) and (max-width: 800px)
+            align-items: center
+
+
+          .project
+            background-size: contain
+            @media (max-width: $small-max)
+              width: 200px
+              height: 200px
+              margin: 0 15px 15px
+            @media (min-width: $medium-min) and (max-width: $medium-max)
+              width: 225px
+              height: 225px
+              margin: 0 50px 15px
+            @media (min-width: $large-min)
+              width: 225px
+              height: 225px
+              margin: 0 15px 0
+            @media (min-width: $xlarge-min)
+              width: 300px
+              height: 300px
+              margin: 0 15px 30px
+
+            &.twitch
+              background-image: url('../images/twitchmonster.png')
+
+            &.office
+              background-image: url('../images/office.png')
+
+            &.trust
+              background-image: url('../images/trust.png')
+
+            .project-inner
+              color: $black
+              display: flex
+              flex-direction: column
+              align-items: center
+              justify-content: center
+              padding: 0 5px
+              width: 100%
+              height: 100%
+              opacity: 0
+              transition: opacity .25s ease-in-out
+              -moz-transition: opacity .25s ease-in-out
+              -webkit-transition: opacity .25s ease-in-out
+              background-color: $green
+              text-align: center
+              &:hover
+                opacity: 0.93
+
+              h3
+                color: $black
+                @media (max-width: $large-max)
+                  font-size: 1.25em
+                  margin-bottom: 5px
+
+              p
+                &.desc
+                  @media (max-width: $large-max)
+                    font-size: .85em
+                    margin-bottom: 5px
+
+                &.tech
+                  font-style: italic
+                  font-size: .9em
+                  @media (max-width: $large-max)
+                    font-size: .75em
+                    margin-bottom: 5px
+
+              .icon-wrapper
+                display: block
+
+                a
+                  margin: 0 10px 0
+
+                i
+                  color: $white
+                  font-size: 1.75em
+                  @media (max-width: $large-max)
+                    font-size: 1.5em
+
+                  &.fa-code-fork
+                    font-size: 2.2em
+                    @media (max-width: $large-max)
+                      font-size: 2em

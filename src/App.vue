@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="main-wrapper">
+    <div class="main-wrapper scrollbar-macosx">
       <nav class="ink-navigation top">
         <ul class="menu horizontal">
           <li><a href="https://www.linkedin.com/in/taylor-hessel-44615848/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>

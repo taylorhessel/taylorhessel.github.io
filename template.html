@@ -6,6 +6,7 @@
     <title>Taylor Hessel</title>
     <link rel="stylesheet" href="/static/css/ink-flex.min.css">
     <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/jquery.scrollbar.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Source+Sans+Pro" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="57x57" href="/static/favicons/apple-icon-57x57.png">
@@ -28,5 +29,12 @@
   </head>
   <body>
     <div id="app"></div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.js" integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg=" crossorigin="anonymous"></script>
+    <script src="/static/js/jquery.scrollbar.min.js"></script>
+    <script type="text/JavaScript">
+      jQuery(document).ready(function(){
+        jQuery('.scrollbar-macosx').scrollbar();
+      });
+    </script>
   </body>
 </html>

@@ -1,5 +1,5 @@
 export default {
-  title: 'full-stack dev',
+  title: 'full stack developer',
   location: 'Denver, CO',
   personal: "Suh? My name is <span>Taylor Hessel</span>, and I'm a web developer living in Denver, CO. I like gaming and cooking, and I love my cats. Coding is pretty fun, too.",
   jobs: [

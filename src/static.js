@@ -6,8 +6,8 @@ export default {
     {
       employer: 'Galvanize Web Development Immersive',
       title: 'Student',
-      date: 'July 2016 - December 2016',
-      description: 'Immersive curriculum focused on JavaScript, HTML, CSS, Node.js, Express, and PostgreSQL. Completed individual and group projects following the Scrum methodology, developed features in unfamiliar environments, and presented lightning talks.'
+      date: 'Graduated December 2016',
+      description: '  Completed individual and group projects following the Scrum methodology, developed features in unfamiliar environments, and presented lightning talks.'
     },
     {
       employer: 'booj',
@@ -45,7 +45,8 @@ export default {
     'PostgreSQL',
     'SASS',
     'Scrum',
-    'Vue.js'
+    'Vue.js',
+    'webpack'
   ],
   exposure: [
     'Chai',
@@ -56,8 +57,7 @@ export default {
     'MySQL',
     'Open Source Projects',
     'PHP',
-    'SVN',
-    'VIM'
+    'SVN'
   ],
   queue: [
     'Ember',

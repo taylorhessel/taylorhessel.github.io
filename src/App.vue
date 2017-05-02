@@ -3,7 +3,7 @@
     <div class="main-wrapper scrollbar-macosx">
       <nav class="ink-navigation top">
         <ul class="menu horizontal">
-          <li><a href="https://www.linkedin.com/in/taylor-hessel-44615848/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/taylorhessel/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
           <li><a href="https://github.com/taylorhessel" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
         </ul>
       </nav>
@@ -16,7 +16,7 @@
           <li><a :class="{ 'active': aboutActive }" @click="viewAbout">about</a></li>
           <li><a :class="{ 'active': technicalActive }" @click="viewTechnical">skills</a></li>
           <li><a :class="{ 'active': projectsActive }" @click="viewProjects">projects</a></li>
-          <li><a href="#">resume</a></li>
+          <li><a href="/static/docs/thessel_resume.pdf" target="_blank">resume</a></li>
         </ul>
       </nav>
     </div>

@@ -25,26 +25,26 @@ export default {
   foundation1: [
     'AJAX',
     'AngularJS',
-    'Bash',
     'Bootstrap',
     'CSS',
     'Express',
-    'Firebase',
     'Git/Github',
     'Heroku',
     'HTML',
-    'JavaScript'
+    'Java',
+    'JavaScript',
+    'jQuery'
   ],
   foundation2: [
-    'jQuery',
     'Knex.js',
     'Node.js',
-    'Oauth',
     'Passport',
     'Pivotal Tracker',
     'PostgreSQL',
     'SASS',
     'Scrum',
+    'Spring MVC',
+    'TDD',
     'Vue.js',
     'webpack'
   ],
@@ -61,7 +61,6 @@ export default {
   ],
   queue: [
     'Ember',
-    'Java',
     'React',
     'Redux',
     'Vuex'
